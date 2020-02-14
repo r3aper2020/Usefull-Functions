@@ -1,0 +1,6 @@
+Search: 'dog'
+Out_Dir: 'Dog-Images/'
+Number_To_Download: 10
+
+# This is needed for download numbers over 100
+Chrome_Driver: /usr/bin/chromedriver
