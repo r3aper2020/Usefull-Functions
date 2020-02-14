@@ -3,6 +3,7 @@ This downloads images from google.
 
 Step 1: 
 - RUN: pip3 install google_images_download
+- RUN: pip3 install pyyaml
 
 Step 2:
 - Fill out "*config.yaml*"
