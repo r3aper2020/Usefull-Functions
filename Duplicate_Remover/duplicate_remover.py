@@ -6,7 +6,6 @@ import yaml
 config = yaml.load(open('config.yaml'), Loader=yaml.FullLoader)
 
 path = config["File_Path"]
-# from sets import Set
 
 def read_chunk(fobj, chunk_size = 2048):
     while True:
@@ -23,8 +22,7 @@ def remove_duplicates(dir, hashfun = hashlib.sha512):
             hashobj = hashfun()
             for chunk in read_chunk(open(filepath,'rb')):
                 hashobj.update(chunk)
-                # the size of the hashobj is constant
-                # print "hashfun: ", hashfun.__sizeof__()
+               
             hashfile = hashobj.hexdigest()
             if hashfile not in unique:
                 unique.add(hashfile)
